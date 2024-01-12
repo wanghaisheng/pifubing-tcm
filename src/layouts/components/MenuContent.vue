@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class=\>
     <template v-for="item in list" :key="item.path">
       <template v-if="!item.children || !item.children.length || item.meta?.single">
         <t-menu-item v-if="getHref(item)" :name="item.path" :value="getPath(item)" @click="openHref(getHref(item)[0])">
